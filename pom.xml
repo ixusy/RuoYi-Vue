@@ -3,17 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-    <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi</artifactId>
+
+    <groupId>com.xby</groupId>
+    <artifactId>xby</artifactId>
     <version>3.8.9</version>
 
-    <name>ruoyi</name>
-    <url>http://www.ruoyi.vip</url>
-    <description>若依管理系统</description>
-    
+    <name>xby</name>
+    <url>http://www.xby.vip</url>
+    <description>xby管理系统</description>
+
     <properties>
-        <ruoyi.version>3.8.9</ruoyi.version>
+        <xby.version>3.8.9</xby.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -185,49 +185,60 @@
 
             <!-- 定时任务-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-quartz</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-quartz</artifactId>
+                <version>${xby.version}</version>
             </dependency>
 
             <!-- 代码生成-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-generator</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-generator</artifactId>
+                <version>${xby.version}</version>
             </dependency>
 
             <!-- 核心模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-framework</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-framework</artifactId>
+                <version>${xby.version}</version>
             </dependency>
 
             <!-- 系统模块-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-system</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-system</artifactId>
+                <version>${xby.version}</version>
             </dependency>
 
             <!-- 通用工具-->
             <dependency>
-                <groupId>com.ruoyi</groupId>
-                <artifactId>ruoyi-common</artifactId>
-                <version>${ruoyi.version}</version>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-common</artifactId>
+                <version>${xby.version}</version>
             </dependency>
+
+
+            <!-- 功能测试 -->
+            <dependency>
+                <groupId>com.xby</groupId>
+                <artifactId>xby-testAll</artifactId>
+                <version>${xby.version}</version>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-admin</module>
-        <module>ruoyi-framework</module>
-        <module>ruoyi-system</module>
-        <module>ruoyi-quartz</module>
-        <module>ruoyi-generator</module>
-        <module>ruoyi-common</module>
+        <module>xby-admin</module>
+        <module>xby-framework</module>
+        <module>xby-system</module>
+        <module>xby-quartz</module>
+        <module>xby-generator</module>
+        <module>xby-common</module>
+        <module>xby-testAll</module>
     </modules>
     <packaging>pom</packaging>
 
